@@ -12,6 +12,8 @@
 		A775D6061EDA11D4004DAD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A775D6041EDA11D4004DAD0A /* Main.storyboard */; };
 		A775D6081EDA11D4004DAD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A775D6071EDA11D4004DAD0A /* Assets.xcassets */; };
 		A775D60B1EDA11D4004DAD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A775D6091EDA11D4004DAD0A /* LaunchScreen.storyboard */; };
+		A775D6131EDC49C9004DAD0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A775D6121EDC49C9004DAD0A /* Constants.swift */; };
+		A775D6151EDC4C70004DAD0A /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A775D6141EDC4C70004DAD0A /* CurrentWeather.swift */; };
 		CC2EF3B2EB2437B428262B6F /* Pods_RainyShinyCloudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CE7049A565C6D34D6B01D1 /* Pods_RainyShinyCloudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		A775D6071EDA11D4004DAD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A775D60A1EDA11D4004DAD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A775D60C1EDA11D4004DAD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A775D6121EDC49C9004DAD0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A775D6141EDC4C70004DAD0A /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		B3CE7049A565C6D34D6B01D1 /* Pods_RainyShinyCloudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainyShinyCloudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA260A93EA9E64909DF9917 /* Pods-RainyShinyCloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +71,8 @@
 				A775D6071EDA11D4004DAD0A /* Assets.xcassets */,
 				A775D6091EDA11D4004DAD0A /* LaunchScreen.storyboard */,
 				A775D60C1EDA11D4004DAD0A /* Info.plist */,
+				A775D6121EDC49C9004DAD0A /* Constants.swift */,
+				A775D6141EDC4C70004DAD0A /* CurrentWeather.swift */,
 			);
 			path = RainyShinyCloudy;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			files = (
 				A775D6031EDA11D4004DAD0A /* WeatherVC.swift in Sources */,
 				A775D6011EDA11D4004DAD0A /* AppDelegate.swift in Sources */,
+				A775D6151EDC4C70004DAD0A /* CurrentWeather.swift in Sources */,
+				A775D6131EDC49C9004DAD0A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
