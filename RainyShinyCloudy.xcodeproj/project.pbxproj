@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A775D6011EDA11D4004DAD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A775D6001EDA11D4004DAD0A /* AppDelegate.swift */; };
-		A775D6031EDA11D4004DAD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A775D6021EDA11D4004DAD0A /* ViewController.swift */; };
+		A775D6031EDA11D4004DAD0A /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A775D6021EDA11D4004DAD0A /* WeatherVC.swift */; };
 		A775D6061EDA11D4004DAD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A775D6041EDA11D4004DAD0A /* Main.storyboard */; };
 		A775D6081EDA11D4004DAD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A775D6071EDA11D4004DAD0A /* Assets.xcassets */; };
 		A775D60B1EDA11D4004DAD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A775D6091EDA11D4004DAD0A /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		A2B0DCC7A83D439C97C5F01D /* Pods-RainyShinyCloudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.debug.xcconfig"; sourceTree = "<group>"; };
 		A775D5FD1EDA11D4004DAD0A /* RainyShinyCloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainyShinyCloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A775D6001EDA11D4004DAD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A775D6021EDA11D4004DAD0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A775D6021EDA11D4004DAD0A /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		A775D6051EDA11D4004DAD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A775D6071EDA11D4004DAD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A775D60A1EDA11D4004DAD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				A775D6001EDA11D4004DAD0A /* AppDelegate.swift */,
-				A775D6021EDA11D4004DAD0A /* ViewController.swift */,
+				A775D6021EDA11D4004DAD0A /* WeatherVC.swift */,
 				A775D6041EDA11D4004DAD0A /* Main.storyboard */,
 				A775D6071EDA11D4004DAD0A /* Assets.xcassets */,
 				A775D6091EDA11D4004DAD0A /* LaunchScreen.storyboard */,
@@ -123,6 +123,7 @@
 				TargetAttributes = {
 					A775D5FC1EDA11D4004DAD0A = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L4R262228V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -211,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A775D6031EDA11D4004DAD0A /* ViewController.swift in Sources */,
+				A775D6031EDA11D4004DAD0A /* WeatherVC.swift in Sources */,
 				A775D6011EDA11D4004DAD0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +337,7 @@
 			baseConfigurationReference = A2B0DCC7A83D439C97C5F01D /* Pods-RainyShinyCloudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L4R262228V;
 				INFOPLIST_FILE = RainyShinyCloudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenaramaki.RainyShinyCloudy;
@@ -349,6 +351,7 @@
 			baseConfigurationReference = BBA260A93EA9E64909DF9917 /* Pods-RainyShinyCloudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L4R262228V;
 				INFOPLIST_FILE = RainyShinyCloudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenaramaki.RainyShinyCloudy;
@@ -376,6 +379,7 @@
 				A775D6111EDA11D4004DAD0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
