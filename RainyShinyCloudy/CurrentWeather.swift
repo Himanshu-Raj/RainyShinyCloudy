@@ -94,9 +94,7 @@ class CurrentWeather {
             completed()
             
         }
-        
-        //completed()
-        
+                
     }
     
 }

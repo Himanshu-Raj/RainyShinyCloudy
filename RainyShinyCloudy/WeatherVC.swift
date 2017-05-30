@@ -52,13 +52,22 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return forecasts.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
         
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
+            
+            let forecast = forecasts[indexPath.row]
+            cell.configureCell(forecast: forecast)
+            
+            return cell
+        } else {
+            
+            return WeatherCell()
+            
+        }
         
     }
 
@@ -70,18 +79,12 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // MARK: - Methods
     func updateMainUI() {
         dateLabel.text = currentWeather.date
-        currentTempLabel.text = "\(currentWeather.currentTemp)"
+        currentTempLabel.text = "\(currentWeather.currentTemp)ºF"
         currentWeatherTypeLabel.text = currentWeather.weatherType
         locationLabel.text = currentWeather.cityName
         currentWeatherImage.image = UIImage(named: currentWeather.weatherType)
     }
     
-    
-    
-    
-    // WHY IS HE PUTTING IT INSIDE DE VIEW CONTROLLER???
-    
-    /////////
     func downloadForecastData(completed: @escaping DownloadComplete) {
         // Downloading forecast weather data for TableView
         
@@ -101,6 +104,9 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         
                     }
                     
+                    self.forecasts.remove(at: 0)
+                    self.tableView.reloadData()
+                    
                 }
 
             }
@@ -110,7 +116,6 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
     }
-    /////////
     
 }
 
